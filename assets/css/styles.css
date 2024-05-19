@@ -920,6 +920,13 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  .home__description{
+    margin-right: 20px;
+  }
+  .skills__content{
+    margin-right: 30px;
+    margin-left: -50px;
+  }
 
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
