@@ -129,7 +129,7 @@ h4 {
 }
 
 .img {
-  background-image: url("../assets/images/Asad.jpg");
+  background-image: url("images/Asad.jpg");
   background-position: center;
   /* Center the image */
   background-size: cover;
