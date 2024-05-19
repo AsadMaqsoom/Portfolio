@@ -144,7 +144,7 @@ h4 {
 }
 
 .img {
-  background-image: url("/assets/images/Asad.jpg");
+  background-image: url("assets/images/Asad.jpg");
   background-position: center;
   /* Center the image */
   background-size: cover;
@@ -157,7 +157,7 @@ h4 {
   border-radius: 50%;
 }
 .aboutmeImage {
-  background-image: url("/assets/images/Asad3.jpg");
+  background-image: url("assets/images/Asad3.jpg");
   background-position: center;
   /* Center the image */
   background-size: cover;
