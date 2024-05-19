@@ -64,9 +64,9 @@
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1.25rem;
-    --small-font-size: 1rem;
-    --smaller-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -144,7 +144,7 @@ h4 {
 }
 
 .img {
-  background-image: url("assets/images/Asad.jpg");
+  background-image: url("/assets/images/Asad.jpg");
   background-position: center;
   /* Center the image */
   background-size: cover;
@@ -156,22 +156,6 @@ h4 {
   background-color: antiquewhite;
   border-radius: 50%;
 }
-.aboutmeImage {
-  background-image: url("assets/images/Asad3.jpg");
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
-  /* Ensure the image covers the entire div */
-  background-repeat: no-repeat;
-  /* Prevent the image from repeating */
-  width: 400px;
-  height: 600px;
-  background-color: antiquewhite;
-  border-radius: 50%;
-  position: relative;
-  top: 100px;
-}
-
 .nav__item {
   margin: 20px;
 }
@@ -992,19 +976,6 @@ img {
     gap: 0.5rem;
   }
 
-  .services__container {
-    grid-template-columns: max-content;
-    justify-content: center;
-  }
-
-  .services__content {
-    padding-right: 3.5rem;
-  }
-
-  .services__modal {
-    padding: 0 0.5rem;
-  }
-
   .project__img {
     width: 200px;
   }
@@ -1024,6 +995,7 @@ img {
   .testimonial__description {
     text-align: center;
   }
+
 }
 
 /* For medium devices */
