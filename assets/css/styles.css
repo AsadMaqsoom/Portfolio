@@ -120,21 +120,6 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
-.icon img {
-  width: 100px;
-  /* Adjust size as needed */
-  height: 100px;
-  /* Adjust size as needed */
-  border-radius: 50%;
-  /* For a circular icon */
-  /* Optional: add padding, border, shadow, etc. */
-  padding: 5px;
-  border: 1px solid #084075;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-}
-
 h1,
 h2,
 h3,
@@ -144,7 +129,7 @@ h4 {
 }
 
 .img {
-  background-image: url("/assets/images/Asad.jpg");
+  background-image: url("../assets/images/Asad.jpg");
   background-position: center;
   /* Center the image */
   background-size: cover;
