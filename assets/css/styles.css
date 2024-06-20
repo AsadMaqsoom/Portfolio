@@ -678,6 +678,9 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.my-projects{
+  margin-bottom: 50px;
+}
 .portfolio__container {
   overflow: initial;
 }
