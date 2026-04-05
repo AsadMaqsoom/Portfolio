@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Asad Maqsoom | Full-Stack .NET Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Asad Maqsoom, a Full-Stack .NET Developer Building Scalable Web Applications With Clean & Maintainable Code."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Asad Maqsoom" />
+  <link rel="canonical" href="https://asadmaqsoom.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Asad Maqsoom | Full-Stack .NET Developer Portfolio" />
+  <meta
+    property="og:description"
+    content="Explore projects, skills, qualification, and contact details of Asad Maqsoom, a Full-Stack .NET Developer."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://asadmaqsoom.com/" />
+  <meta property="og:image" content="https://asadmaqsoom.com/images/preview.jpg" />
+  <meta property="og:site_name" content="Asad Maqsoom Portfolio" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Asad Maqsoom | Full-Stack .NET Developer Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Explore projects, skills, qualification, and contact details of Asad Maqsoom."
+  />
+  <meta name="twitter:image" content="https://asadmaqsoom.com/images/preview.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+ <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            gray: {
+              950: "#0b0f1a"
+            }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"]
+          },
+          keyframes: {
+            "fade-in": {
+              from: {
+                opacity: "0",
+                transform: "translateY(10px)"
+              },
+              to: {
+                opacity: "1",
+                transform: "translateY(0)"
+              }
+            },
+            "slide-up": {
+              from: {
+                opacity: "0",
+                transform: "translateY(30px)"
+              },
+              to: {
+                opacity: "1",
+                transform: "translateY(0)"
+              }
+            },
+            "gradient-shift": {
+              "0%,100%": {
+                backgroundPosition: "0% 50%"
+              },
+              "50%": {
+                backgroundPosition: "100% 50%"
+              }
+            },
+            float: {
+              "0%,100%": {
+                transform: "translateY(0)"
+              },
+              "50%": {
+                transform: "translateY(-10px)"
+              }
+            }
+          },
+          animation: {
+            "gradient-shift": "gradient-shift 3s ease infinite",
+            float: "float 3s ease-in-out infinite",
+            "fade-in": "fade-in 0.6s ease-out forwards",
+            "slide-up": "slide-up 0.8s ease-out forwards"
+          },
+          backdropBlur: {
+            xs: "2px"
+          },
+          boxShadow: {
+            glass: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+            neon: "0 0 20px rgba(139, 92, 246, 0.5)"
+          },
+          backgroundImage: {
+            "gradient-radial": "radial-gradient(var(--tw-gradient-stops))"
+          }
+        }
+      }
+    };
+  </script>
+ 
+
+  <!-- Favicon -->
+ <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./images/favicon.svg" sizes="32x32">
+<link rel="apple-touch-icon" href="./images/favicon.svg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Asad Maqsoom",
+      "url": "https://asadmaqsoom.com/",
+      "jobTitle": "Full-Stack .NET Developer",
+      "email": "mailto:asad.maqsoom@outlook.com",
+      "sameAs": [
+        "https://github.com/AsadMaqsoom",
+        "https://www.linkedin.com/in/asad-maqsoom-6b31241b7/"
+      ]
+    }
+  </script>
+</head>
+
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+ <!-- Navigation -->
+<nav
+  aria-label="Primary Navigation"
+  class="fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur-lg border-b border-gray-800"
+>
+  <div class="container mx-auto px-4 md:px-6 py-4">
+    <div class="flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center space-x-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-lg min-w-0">
+        <img 
+          src="./images/asad.jpg" 
+          alt="Asad Maqsoom - Full Stack .NET Developer"
+          class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover object-top border border-purple-500/40 shadow-md shadow-purple-500/20 shrink-0"
+        >
+        <span class="text-lg md:text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent truncate">
+          Asad Maqsoom
+        </span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md" href="#hero">Home</a>
+        <a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md" href="#skills">Skills</a>
+        <a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md" href="#projects">Projects</a>
+        <a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-md" href="#qualification">Qualification</a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="flex items-center space-x-3">
+        <!-- Desktop Contact Button -->
+        <a
+          class="hidden md:inline-flex px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+          href="#contact"
+        >
+          Contact
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Open mobile menu"
+          class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-gray-700 bg-gray-900/80 text-gray-200 hover:text-white hover:border-purple-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+        >
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+
+          <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden mt-4 rounded-2xl border border-gray-800 bg-gray-900/95 backdrop-blur-xl overflow-hidden"
+    >
+      <div class="flex flex-col p-3">
+        <a class="mobile-nav-link px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/80 transition-colors duration-200" href="#hero">Home</a>
+        <a class="mobile-nav-link px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/80 transition-colors duration-200" href="#skills">Skills</a>
+        <a class="mobile-nav-link px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/80 transition-colors duration-200" href="#projects">Projects</a>
+        <a class="mobile-nav-link px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/80 transition-colors duration-200" href="#qualification">Qualification</a>
+        <a class="mobile-nav-link mt-2 px-4 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium text-center hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-20 md:pt-32 flex items-center relative" id="hero" aria-labelledby="hero-heading">
+      <div class="container mx-auto px-6 py-3">
+        <div class="max-w-5xl mx-auto">
+          <!-- Badge -->
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 mb-8 animate-fade-in">
+            <div class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" aria-hidden="true"></div>
+            <span class="text-sm font-medium text-gray-300">Available for freelance &amp; full-time roles</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 id="hero-heading" class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up">
+            Full-Stack .NET Developer Building
+            <span class="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+             Scalable Web Applications
+            </span>
+            With Clean & Maintainable Code
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-xl text-gray-400 mb-10 max-w-3xl animate-slide-up delay-100">
+           Hi, I'm <strong>Asad Maqsoom</strong> — a Full-Stack .NET Developer specializing in scalable web applications and clean architecture.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-4 mb-16 animate-slide-up delay-200">
+            <a
+              class="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              href="#projects"
+            >
+              <span class="mr-2">View Projects</span>
+              <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </a>
+
+            <a
+              class="group px-8 py-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              href="https://drive.google.com/file/d/1978e3t4Mugx8AnvXnqhWaaD8xf5TB3rF/view?usp=sharing"
+              id="download-cv"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Asad Maqsoom CV in a new tab"
+            >
+              <i class="fas fa-download mr-2 group-hover:translate-y-0.5 transition-transform" aria-hidden="true"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Tech Stack Indicators -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center p-4 rounded-xl bg-gray-800/30 border border-gray-700/50 hover:border-purple-500/50 transition-colors">
+              <div class="text-2xl mb-2">
+                <i class="fab fa-microsoft text-blue-400" aria-hidden="true"></i>
+              </div>
+              <div class="font-medium">Project-Based Experience</div>
+              <div class="text-sm text-gray-400">Built full-stack applications using modern development practices.</div>
+            </div>
+
+            <div class="text-center p-4 rounded-xl bg-gray-800/30 border border-gray-700/50 hover:border-cyan-500/50 transition-colors">
+              <div class="text-2xl mb-2">
+                <i class="fab fa-js-square text-yellow-400" aria-hidden="true"></i>
+              </div>
+              <div class="font-medium">10+ Projects</div>
+              <div class="text-sm text-gray-400">Developed dashboards, APIs, and responsive web applications.</div>
+            </div>
+
+            <div class="text-center p-4 rounded-xl bg-gray-800/30 border border-gray-700/50 hover:border-green-500/50 transition-colors">
+              <div class="text-2xl mb-2">
+                <i class="fas fa-database text-green-400" aria-hidden="true"></i>
+              </div>
+              <div class="font-medium">Modern Tech Stack</div>
+              <div class="text-sm text-gray-400">Expertise in ASP.NET Core, JavaScript, SQL, and modern frameworks.</div>
+            </div>
+
+            <div class="text-center p-4 rounded-xl bg-gray-800/30 border border-gray-700/50 hover:border-pink-500/50 transition-colors">
+              <div class="text-2xl mb-2">
+                <i class="fas fa-chart-line text-pink-400" aria-hidden="true"></i>
+              </div>
+              <div class="font-medium">Available for Work</div>
+              <div class="text-sm text-gray-400">Open for freelance, contract, and full-time opportunities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Elements -->
+      <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden" aria-hidden="true">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-900/50" id="skills" aria-labelledby="skills-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-blue-500 mb-4">
+              <i class="fas fa-code text-white" aria-hidden="true"></i>
+            </div>
+            <h2 id="skills-heading" class="text-3xl md:text-4xl font-bold mb-4">Technical Expertise</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              Specialized in full-stack web development with focus on scalability, performance, and clean architecture.
+            </p>
+          </div>
+
+          <!-- Skills Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Frontend -->
+            <article class="group p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-1">
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-lg bg-blue-500/10">
+                  <i class="fab fa-html5 text-blue-400 text-xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/20 text-blue-400">Expert</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Frontend Development</h3>
+              <p class="text-gray-400 mb-4">Building responsive, interactive user interfaces with modern frameworks.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">HTML5/CSS3</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Tailwind CSS</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">JavaScript</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Bootstrap</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">React</span>
+              </div>
+            </article>
+
+            <!-- .NET Backend -->
+            <article class="group p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:-translate-y-1">
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-lg bg-purple-500/10">
+                  <i class="fab fa-microsoft text-purple-400 text-xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/20 text-purple-400">Specialty</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">.NET &amp; Backend</h3>
+              <p class="text-gray-400 mb-4">Enterprise-grade applications with C# and ASP.NET Core ecosystem.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">C#</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">ASP.NET Core</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">MVC Pattern</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Web API</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Entity Framework</span>
+              </div>
+            </article>
+
+            <!-- Databases -->
+            <article class="group p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50 hover:border-green-500/50 transition-all duration-300 hover:transform hover:-translate-y-1">
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-lg bg-green-500/10">
+                  <i class="fas fa-database text-green-400 text-xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-green-500/20 text-green-400">Advanced</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Databases &amp; APIs</h3>
+              <p class="text-gray-400 mb-4">Designing efficient data architectures and RESTful APIs.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">SQL Server</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">MySQL</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">REST APIs</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">GraphQL</span>
+              </div>
+            </article>
+
+            <!-- Tools & DevOps -->
+            <article class="group p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:-translate-y-1">
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-lg bg-cyan-500/10">
+                  <i class="fas fa-tools text-cyan-400 text-xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400">Proficient</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Tools &amp; Workflow</h3>
+              <p class="text-gray-400 mb-4">Professional development workflow with modern tooling.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Git/GitHub</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">VS Code</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Visual Studio</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">Docker</span>
+                <span class="px-3 py-1 rounded-full bg-gray-800 text-sm">CI/CD</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20" id="projects" aria-labelledby="projects-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-blue-500 mb-4">
+              <i class="fas fa-project-diagram text-white" aria-hidden="true"></i>
+            </div>
+            <h2 id="projects-heading" class="text-3xl md:text-4xl font-bold mb-4">Real-World Projects</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              Production-ready applications demonstrating problem-solving, scalability, and technical expertise.
+            </p>
+          </div>
+
+          <!-- Project Controls -->
+          <div class="mb-10 p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+              <!-- Search -->
+              <div class="w-full md:w-auto flex-1">
+                <div class="relative">
+                  <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true"></i>
+                  <label for="project-search" class="sr-only">Search projects</label>
+                  <input
+                    class="w-full pl-12 pr-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-500 transition-colors"
+                    id="project-search"
+                    placeholder="Search projects by name, tech, or description..."
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <!-- Filters -->
+              <div class="flex flex-wrap gap-3" aria-label="Project filters">
+                <button class="project-filter px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 hover:border-purple-500 transition-colors active focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" data-filter="all" aria-pressed="true" type="button">
+                  All Projects
+                </button>
+                <button class="project-filter px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 hover:border-blue-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" data-filter=".net" aria-pressed="false" type="button">
+                  .NET
+                </button>
+                <button class="project-filter px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 hover:border-yellow-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" data-filter="javascript" aria-pressed="false" type="button">
+                  JavaScript
+                </button>
+                <button class="project-filter px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 hover:border-green-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" data-filter="php" aria-pressed="false" type="button">
+                  PHP
+                </button>
+                <button class="project-filter px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 hover:border-pink-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" data-filter="wordpress" aria-pressed="false" type="button">
+                  WordPress
+                </button>
+              </div>
+            </div>
+
+            <!-- Active Filters Display -->
+            <div class="mt-4 flex flex-wrap gap-2 hidden" id="active-filters" aria-live="polite">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10" id="projects-grid" aria-live="polite">
+            <!-- Projects will be dynamically loaded here -->
+          </div>
+
+          <noscript>
+            <p class="text-center text-gray-400">
+              JavaScript is required to view the interactive project listings.
+            </p>
+          </noscript>
+
+          <!-- Pagination -->
+          <div class="flex justify-center items-center space-x-2" id="pagination" aria-label="Project pagination">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section class="relative overflow-hidden py-20 bg-gray-900/50" id="qualification" aria-labelledby="qualification-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <!-- Header + Tabs -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-600 to-blue-500 shadow-lg shadow-purple-500/20 mb-4">
+              <i class="fas fa-award text-white" aria-hidden="true"></i>
+            </div>
+            <h2 id="qualification-heading" class="text-3xl md:text-4xl font-bold mb-3">Qualification</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">My personal journey</p>
+
+            <!-- Tabs -->
+            <div class="flex justify-center gap-6" role="tablist" aria-label="Qualification Tabs">
+              <button
+                id="tab-edu"
+                role="tab"
+                aria-selected="false"
+                aria-controls="eduTimeline"
+                tabindex="-1"
+                type="button"
+                class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-900/60 border border-gray-700/50 text-gray-200 hover:border-purple-500/50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              >
+                <i class="fas fa-graduation-cap text-purple-300" aria-hidden="true"></i>
+                Education
+              </button>
+
+              <button
+                id="tab-work"
+                role="tab"
+                aria-selected="true"
+                aria-controls="workTimeline"
+                tabindex="0"
+                type="button"
+                class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-200 hover:border-purple-500/50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+              >
+                <i class="fas fa-briefcase text-purple-200" aria-hidden="true"></i>
+                Work
+              </button>
+            </div>
+          </div>
+
+          <!-- Wrapper -->
+          <div class="relative">
+            <!-- WORK -->
+            <div id="workTimeline" class="relative" role="tabpanel" aria-labelledby="tab-work">
+              <div class="absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500/0 via-purple-500/70 to-blue-500/70" aria-hidden="true"></div>
+              <div id="workTimelineItems"></div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div id="eduTimeline" class="relative hidden" role="tabpanel" aria-labelledby="tab-edu">
+              <div class="absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500/0 via-purple-500/70 to-blue-500/70" aria-hidden="true"></div>
+              <div id="eduTimelineItems"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-950/50" id="contact" aria-labelledby="contact-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-blue-500 mb-4">
+              <i class="fas fa-envelope text-white" aria-hidden="true"></i>
+            </div>
+            <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold mb-4">Let's Build Something Great</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              Currently available for freelance projects and full-time opportunities.
+              Let's discuss how I can help bring your ideas to life.
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Contact Info -->
+            <div class="lg:col-span-1 space-y-6">
+              <div class="p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mr-4">
+                    <i class="fas fa-map-marker-alt text-purple-400" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold">Location</h3>
+                    <p class="text-gray-400">Available Worldwide</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mr-4">
+                    <i class="fas fa-envelope text-blue-400" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold">Email</h3>
+                    <a href="mailto:asad.maqsoom@outlook.com" class="text-gray-400 hover:text-white transition-colors">
+                      asad.maqsoom@outlook.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-gray-800/30 border border-gray-700/50">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-cyan-500/10 flex items-center justify-center mr-4">
+                    <i class="fas fa-clock text-cyan-400" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold">Response Time</h3>
+                    <p class="text-gray-400">Within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-2">
+              <form class="p-8 rounded-2xl bg-gray-800/30 border border-gray-700/50" id="contact-form" novalidate>
+                <!-- Honeypot -->
+                <input type="text" id="website" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label class="block text-sm font-medium mb-2" for="name">Full Name</label>
+                    <input
+                      class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-500 transition-colors"
+                      id="name"
+                      name="name"
+                      required
+                      type="text"
+                      autocomplete="name"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-2" for="email">Email Address</label>
+                    <input
+                      class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-500 transition-colors"
+                      id="email"
+                      name="email"
+                      required
+                      type="email"
+                      autocomplete="email"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2" for="subject">Subject</label>
+                  <input
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-500 transition-colors"
+                    id="subject"
+                    name="subject"
+                    required
+                    type="text"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2" for="message">Message</label>
+                  <textarea
+                    class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-500 transition-colors resize-none"
+                    id="message"
+                    name="message"
+                    required
+                    rows="5"
+                  ></textarea>
+                </div>
+
+                <button
+                  id="contact-submit"
+                  class="group px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                  type="submit"
+                >
+                  <span class="mr-2">Send Message</span>
+                  <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                </button>
+
+                <!-- Alert box -->
+                <div id="contact-alert" class="hidden mt-5 text-sm px-4 py-3 rounded-xl border" aria-live="polite"></div>
+              </form>
+
+              <!-- Social Links -->
+              <div class="flex justify-center space-x-6 mt-8">
+                <a
+                  href="https://github.com/AsadMaqsoom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub"
+                  aria-label="Visit Asad Maqsoom GitHub profile"
+                  class="w-12 h-12 rounded-xl bg-gray-800/50 border border-gray-700/50 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                >
+                  <i class="fab fa-github text-xl" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/asad-maqsoom-6b31241b7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                  aria-label="Visit Asad Maqsoom LinkedIn profile"
+                  class="w-12 h-12 rounded-xl bg-gray-800/50 border border-gray-700/50 flex items-center justify-center hover:bg-blue-500/20 hover:border-blue-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                >
+                  <i class="fab fa-linkedin-in text-xl" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="https://wa.me/923177183490?text=Hello%20Asad,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="WhatsApp"
+                  aria-label="Contact Asad Maqsoom on WhatsApp"
+                  class="w-12 h-12 rounded-xl bg-gray-800/50 border border-gray-700/50 flex items-center justify-center hover:bg-green-500/20 hover:border-green-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
+                >
+                  <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 border-t border-gray-800 pt-16 pb-8 text-center">
+    <p class="text-gray-500 text-sm">
+      © <span id="current-year"></span> Asad Maqsoom — Full-Stack .NET Developer. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript Files -->
+    <script src="./js/site-content.js" defer></script>
+  <script src="./js/hero.js" defer></script>
+  <script src="./js/projects.js" defer></script>
+  <script src="./js/skills.js" defer></script>
+  <script src="./js/contact.js" defer></script>
+  <script src="./js/qualification.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/animations.js" defer></script>
+  <script src="./js/hamburger.js"></script>
+
+  <!-- Tabs Toggle Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabEdu = document.getElementById("tab-edu");
+      const tabWork = document.getElementById("tab-work");
+      const eduTimeline = document.getElementById("eduTimeline");
+      const workTimeline = document.getElementById("workTimeline");
+      const currentYear = document.getElementById("current-year");
+
+      if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+      }
+
+      function activateEdu() {
+        eduTimeline.classList.remove("hidden");
+        workTimeline.classList.add("hidden");
+
+        tabEdu.classList.remove("bg-gray-900/60", "border-gray-700/50", "text-gray-200");
+        tabEdu.classList.add("bg-purple-500/10", "border-purple-500/30", "text-purple-200");
+
+        tabWork.classList.remove("bg-purple-500/10", "border-purple-500/30", "text-purple-200");
+        tabWork.classList.add("bg-gray-900/60", "border-gray-700/50", "text-gray-200");
+
+        tabEdu.setAttribute("aria-selected", "true");
+        tabEdu.setAttribute("tabindex", "0");
+        tabWork.setAttribute("aria-selected", "false");
+        tabWork.setAttribute("tabindex", "-1");
+      }
+
+      function activateWork() {
+        workTimeline.classList.remove("hidden");
+        eduTimeline.classList.add("hidden");
+
+        tabWork.classList.remove("bg-gray-900/60", "border-gray-700/50", "text-gray-200");
+        tabWork.classList.add("bg-purple-500/10", "border-purple-500/30", "text-purple-200");
+
+        tabEdu.classList.remove("bg-purple-500/10", "border-purple-500/30", "text-purple-200");
+        tabEdu.classList.add("bg-gray-900/60", "border-gray-700/50", "text-gray-200");
+
+        tabWork.setAttribute("aria-selected", "true");
+        tabWork.setAttribute("tabindex", "0");
+        tabEdu.setAttribute("aria-selected", "false");
+        tabEdu.setAttribute("tabindex", "-1");
+      }
+
+      tabEdu.addEventListener("click", activateEdu);
+      tabWork.addEventListener("click", activateWork);
+
+      tabEdu.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          tabWork.focus();
+          activateWork();
+        }
+      });
+
+      tabWork.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          tabEdu.focus();
+          activateEdu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+/* Minimal custom CSS (Tailwind-first)
+   Only browser primitives that Tailwind can't (or shouldn't) handle:
+   - Scrollbar styling
+   - Global selection color
+   - Animation delay utilities (used by existing markup)
+   - Scroll padding for fixed navbar
+*/
+
+html {
+  scroll-padding-top: 80px; /* for anchor jumps with fixed nav */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #111827; } /* gray-900 */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+  border-radius: 5px;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #f9fafb;
+}
+
+/* Animation delay utilities (Tailwind doesn't ship animation-delay by default) */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+.delay-900 { animation-delay: 900ms; }
+.delay-1000 { animation-delay: 1000ms; }
+
+/* Respect reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  .delay-100,.delay-200,.delay-300,.delay-400,.delay-500,.delay-600,.delay-700,.delay-800,.delay-900,.delay-1000 {
+    animation-delay: 0ms !important;
+  }
+}
