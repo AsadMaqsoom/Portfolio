@@ -1,24 +1,40 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contact-form");
-  if (!form) return;
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const submitBtn = document.getElementById('contact-submit');
+  const alertBox = document.getElementById('contact-alert');
+  
+  // Disable button to prevent multiple clicks
+  submitBtn.disabled = true;
+  submitBtn.innerText = 'Sending...';
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value
+  };
 
-    const payload = {
-      fullName: document.getElementById("name").value.trim(),
-      email: document.getElementById("email").value.trim(),
-      subject: document.getElementById("subject").value.trim(),
-      message: document.getElementById("message").value.trim(),
-      subscribeToNewsletter: document.getElementById("newsletter").checked
-    };
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
 
-    const targetEmail = "asad.maqsoom@outlook.com";
-    const subject = encodeURIComponent(payload.subject || `Portfolio inquiry from ${payload.fullName || "Website Visitor"}`);
-    const body = encodeURIComponent(
-      `Name: ${payload.fullName}\nEmail: ${payload.email}\nNewsletter: ${payload.subscribeToNewsletter ? "Yes" : "No"}\n\nMessage:\n${payload.message}`
-    );
-
-    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
-  });
+    if (response.ok) {
+      alertBox.className = "mt-5 text-sm px-4 py-3 rounded-xl border bg-green-500/10 border-green-500/20 text-green-400";
+      alertBox.innerText = "Message sent successfully!";
+      document.getElementById('contact-form').reset();
+    } else {
+      throw new Error('Failed to send');
+    }
+  } catch (error) {
+    alertBox.className = "mt-5 text-sm px-4 py-3 rounded-xl border bg-red-500/10 border-red-500/20 text-red-400";
+    alertBox.innerText = "Something went wrong. Please try again.";
+  } finally {
+    alertBox.classList.remove('hidden');
+    submitBtn.disabled = false;
+    submitBtn.innerText = 'Send Message';
+  }
 });
