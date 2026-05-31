@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       
       await resend.emails.send({
         from: 'onboarding@resend.dev', // Resend ka default ya verify domain
-        to: 'asad.maqsoom@outlook.com',  // Jahan email receive karni hai
+        to: 'asadmaqsoom77@gmail.com',  // Jahan email receive karni hai
         subject: `New Message from Portfolio: ${name}`,
         text: `From: ${email}\n\nMessage: ${message}`,
       });
