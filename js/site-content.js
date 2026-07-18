@@ -3,9 +3,9 @@ window.Portfolio.data = {
   "hero": {
     "Id": 1,
     "BadgeText": "Available for freelance & full-time roles",
-    "TitleBeforeHighlight": "Full-Stack .NET Developer Building",
-    "TitleHighlight": "Scalable Web Applications",
-    "TitleAfterHighlight": "With Clean & Maintainable Code",
+    "TitleBeforeHighlight": ".NET Developer |",
+"TitleHighlight": "ASP.NET Core & Full-Stack",
+"TitleAfterHighlight": "Web Development",
     "Subtitle": "Specialized in full-stack web development with a strong focus on performance, scalability, and clean architecture using modern technologies.",
     "PrimaryCtaText": "View Projects",
     "PrimaryCtaHref": "#projects",
