@@ -10,7 +10,7 @@ window.Portfolio.data = {
     "PrimaryCtaText": "View Projects",
     "PrimaryCtaHref": "#projects",
     "SecondaryCtaText": "Download CV",
-    "CvUrl": "https://drive.google.com/file/d/1978e3t4Mugx8AnvXnqhWaaD8xf5TB3rF/view?usp=sharing",
+     "CvUrl": "./pdf/Asad_Maqsoom_Resume.pdf",
     "SortOrder": 1
   },
   "heroHighlights": [
