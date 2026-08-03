@@ -100,20 +100,26 @@ class ProjectManager {
           </div>
 
           <div class="flex justify-between items-center pt-4 border-t border-gray-700/50">
-            <div class="flex space-x-4">
-              ${project.liveUrl ? `
-                <a href="${project.liveUrl}" target="_blank" class="flex items-center text-sm font-medium text-gray-300 hover:text-white transition-colors">
-                  <i class="fas fa-external-link-alt mr-2"></i>
-                  Live Demo
-                </a>
-              ` : ""}
-              ${project.githubUrl ? `
-                <a href="${project.githubUrl}" target="_blank" class="flex items-center text-sm font-medium text-gray-300 hover:text-white transition-colors">
-                  <i class="fab fa-github mr-2"></i>
-                  Code
-                </a>
-              ` : ""}
-            </div>
+           <div class="flex space-x-4">
+  ${project.liveUrl ? `
+    <a href="${project.liveUrl}" target="_blank" class="flex items-center text-sm font-medium text-gray-300 hover:text-white transition-colors">
+      <i class="fas fa-external-link-alt mr-2"></i>
+      Live Demo
+    </a>
+  ` : ""}
+  ${project.githubUrl ? `
+    <a href="${project.githubUrl}" target="_blank" class="flex items-center text-sm font-medium text-gray-300 hover:text-white transition-colors">
+      <i class="fab fa-github mr-2"></i>
+      Code
+    </a>
+  ` : ""}
+  ${project.videoUrl ? `
+    <a href="${project.videoUrl}" target="_blank" class="flex items-center text-sm font-medium text-gray-300 hover:text-white transition-colors">
+      <i class="fas fa-play-circle mr-2"></i>
+      Video
+    </a>
+  ` : ""}
+</div>
 
             <button class="view-details-btn p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" data-project-id="${project.id}" aria-label="View project details">
               <i class="fas fa-chevron-right"></i>
