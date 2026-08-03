@@ -159,6 +159,28 @@ window.Portfolio.data = {
   ],
   "projects": [
     {
+      "id": 23,
+      "title": "Pavement Condition Dashboard",
+      "description": "This project is a Pavement Condition Dashboard developed using HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL (PostGIS), and MapLibre GL. It provides interactive road condition visualization, spatial filtering, and map-based analysis using PostgreSQL/PostGIS and REST APIs.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL (PostGIS)",
+        "MapLibre GL"
+      ],
+      "techStack": "HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL (PostGIS), MapLibre GL",
+      "category": "javascript",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/AsadMaqsoom/Pavement-Condition-Dashboard.git",
+      "videoUrl": "https://www.loom.com/share/b12f0e05c3734e96900ed67dce760fe5",
+      "featured": true,
+      "imageUrl": null,
+      "sortOrder": 1
+    },
+    {
       "id": 18,
       "title": "Lab Management System",
       "description": "A comprehensive web-based solution for managing labs, equipment, complaints, schedules, and users in educational institutions. Built with ASP.NET Core 8.0, Entity Framework, and SignalR.",
@@ -172,10 +194,11 @@ window.Portfolio.data = {
       "techStack": ".NET, MVC, Entity Framework, SQL Server, Bootstrap",
       "category": ".net",
       "liveUrl": null,
-      "githubUrl": null,
+      "githubUrl": "https://github.com/AsadMaqsoom/lab-management-system.git",
+      "videoUrl": "https://youtu.be/GXTgbL0a8Bk",
       "featured": true,
       "imageUrl": null,
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": 21,
@@ -247,6 +270,26 @@ window.Portfolio.data = {
       "featured": false,
       "imageUrl": null,
       "sortOrder": 5
+    },
+    {
+      "id": 24,
+      "title": "CareerHub AI Resume Builder",
+      "description": "This project is an AI-powered CareerHub Resume Builder, currently under development, built with React, ASP.NET Core Web API, and Microsoft SQL Server. It enables users to create ATS-friendly resumes through a modern web interface, featuring secure authentication, resume management, and RESTful APIs for efficient frontend-backend communication.",
+      "tech": [
+        "React",
+        "ASP.NET Core Web API",
+        "SQL Server",
+        "REST API",
+        "Authentication"
+      ],
+      "techStack": "React, ASP.NET Core Web API, SQL Server, REST API, Authentication",
+      "category": ".net",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/AsadMaqsoom/CareerHubAI.git",
+      "videoUrl": "https://www.loom.com/share/918b2da3cedb463f9ac7c415ac42d1a3",
+      "featured": true,
+      "imageUrl": null,
+      "sortOrder": 0
     }
   ],
   "meta": {
