@@ -5,7 +5,7 @@ class ProjectManager {
     this.projects = [];
     this.filteredProjects = [];
     this.currentPage = 1;
-    this.projectsPerPage = 6;
+    this.projectsPerPage = 10;
     this.activeFilters = new Set(["all"]);
   }
 
